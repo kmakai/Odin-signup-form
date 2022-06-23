@@ -94,7 +94,7 @@ main {
 .mid {
   display: grid;
   grid-auto-rows: auto 1fr;
-  box-shadow: -0.1rem 0 0.7rem #000;
+  box-shadow: 0.1rem 0 1rem rgba(0, 0, 0, 0.24);
   background-color: #fff;
 }
 
