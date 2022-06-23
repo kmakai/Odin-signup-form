@@ -2,6 +2,9 @@
 
 * {
   /* border: 1px solid #333; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,7 +14,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-  padding: 0 15%;
+  padding: 0 12%;
   margin: 0;
   background-color: #000;
   font-family: "Roboto", sans-serif;
@@ -48,7 +51,7 @@ aside {
 }
 
 .aside-cont h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 main {
@@ -62,7 +65,7 @@ main {
 .top,
 .mid,
 .bot {
-  padding-left: 3rem;
+  padding: 2rem 5rem;
 }
 
 .top {
@@ -73,6 +76,7 @@ main {
 }
 .top i {
   font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .top-para,
@@ -84,15 +88,19 @@ main {
 
 .top-text {
   margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .mid {
   display: grid;
   grid-auto-rows: auto 1fr;
-
   box-shadow: -0.1rem 0 0.7rem #000;
-
   background-color: #fff;
+}
+
+.mid h2 {
+  margin-top: 2.5rem;
+  font-size: 2.3rem;
 }
 
 form {
@@ -111,5 +119,72 @@ form {
 label {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: inherit;
 }
+
+label input {
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+
+  border: 1.5px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+label input:focus {
+  outline: 2px solid #3b82f6;
+}
+
+.error {
+  outline: 2px solid rgba(255, 0, 0, 0.603);
+}
+
+.password-span {
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.bot button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  background-color: #84cc16;
+  color: #fff;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.bot button:hover {
+  background-color: #4d7c0f;
+}
+
+.bot p {
+  font-size: 2rem;
+}
+
+.bot p span {
+  color: #84cc16;
+  font-weight: bold;
+}
+
+.bot p span:hover {
+  color: #4d7c0f;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+} ;
